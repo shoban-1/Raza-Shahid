@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 100px 0;
+}
+
+.progress-bar {
+    background-color: #6a11cb;
+    transition: width 0.5s;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background-color: #2575fc;
+    border-color: #2575fc;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/* Interactive Hero Background */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(120deg, #4e54c8, #8f94fb);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-section .interactive-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path-to-background-image.jpg') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: 1;
+    animation: move-bg 20s infinite alternate ease-in-out;
+}
+
+.hero-section .container {
+    z-index: 2;
+}
+
+/* Move Background Animation */
+@keyframes move-bg {
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1.3) translate(10px, 10px);
+    }
+}
+
+/* Card Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px #2575fc;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* Contact Form Enhancements */
+form input, form textarea {
+    border: 2px solid #ddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+    outline: none;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(106, 17, 203, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+/* About Section Styling */
+.about-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background: url('path-to-background-image.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.about-section .container {
+    z-index: 2;
+}
+
+/* Profile Image */
+.img-thumbnail {
+    border: 5px solid #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Text */
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.about-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background: url('bg.jpeg') no-repeat center center/cover; /* Line where you add/update image */
+    position: relative;
+}
+
+
